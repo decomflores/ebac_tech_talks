@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pridi:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div class="container">
             <img class="hero__logo" src="./img/ebac_logo.svg" alt="EBAC LOGO">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 31d 24m 16s.
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -32,10 +33,50 @@
                         12/12/2024 às 19hs
                     </li>
                 </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
             </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum?</p>
+            </div>
+            <img class="event__img" src="./img/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--img-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UX/UI</h2>
+                <p class="event__details__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum?</p>
+            </div>
+            <img class="event__img" src="./img/ui-ux.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum?</p>
+            </div>
+            <img class="event__img" src="./img/data.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--backend event--img-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae accusantium eos voluptate nemo necessitatibus, quia modi fuga illo ea soluta dicta eligendi cupiditate mollitia inventore enim repellat? Aut, laborum?</p>
+            </div>
+            <img class="event__img" src="./img/backend.png" alt="frontend">
+        </div>
+    </section>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
